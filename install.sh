@@ -11,7 +11,7 @@ DEBIAN_FRONTEND=noninteractive
 # Update list of available packages
 apt-get update -y -q
 # Update installed packages
-apt-get DPkg::options::="--force-confdef" -o DPkg::options::="--force-confold" dist-upgrade -y -q
+#apt-get DPkg::options::="--force-confdef" -o DPkg::options::="--force-confold" dist-upgrade -y -q
 # Install the most common packages that will be usefull under development environment
 apt-get install zip unzip fail2ban htop sqlite3 nload mlocate nano memcached python-software-properties software-properties-common -y -q
 # Install Nginx && PHP-FPM stack
